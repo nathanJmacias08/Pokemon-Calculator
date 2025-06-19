@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokémon Tera Raid Counter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Pokémon Tera Raid Counter</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="regular-counters.html" target="_blank">Regular Pokémon Counters</a>
+      <a href="tera-counters.html" target="_blank">Tera Type Counters</a>
+    </nav>
+  </header>
+
+  <section id="search">
+    
+    <input type="text" id="pokemon-search" placeholder="Search for Pokémon..." autocomplete="off" />
+    <div id="suggestions" class="autocomplete-box"></div>
+    <div class="filters">
+      <select id="type-filter">
+        <option value="">All Types</option>
+        <option>fire</option><option>water</option><option>grass</option><option>electric</option>
+        <option>fighting</option><option>ghost</option><option>dragon</option><option>fairy</option>
+      </select>
+      <select id="generation-filter">
+        <option value="">All Gens</option>
+        <option value="1">Gen 1</option><option value="2">Gen 2</option><option value="3">Gen 3</option>
+        <option value="4">Gen 4</option><option value="5">Gen 5</option><option value="6">Gen 6</option>
+        <option value="7">Gen 7</option><option value="8">Gen 8</option><option value="9">Gen 9</option>
+      </select>
+    </div>
+    
+    <button onclick="searchPokemon()">Search</button>
+  </section>
+
+  <section id="pokemon-data"></section>
+
+  <footer>
+    <p>© 2025 Pokémon Counter Calculator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
