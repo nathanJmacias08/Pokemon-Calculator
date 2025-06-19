@@ -1,0 +1,96 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('https://wallpapercave.com/wp/wp2764047.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background: rgba(255, 203, 5, 0.9);
+  padding: 20px;
+  color: #2a75bb;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #2a75bb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#search {
+  margin: 20px 0;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button {
+  background: #ffcb05;
+  color: #2a75bb;
+  border: none;
+  cursor: pointer;
+}
+
+#pokemon-data {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.autocomplete-box {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  text-align: left;
+  z-index: 10;
+}
+
+.suggestion {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background-color: #eee;
+}
+
+.filters {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.poke-card.animate {
+  animation: pop-in 0.5s ease-in-out;
+}
+
+@keyframes pop-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
