@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon Counter Calculator</title>
+  <link rel="icon" href="masterball.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Pokémon Counter Calculator</h1>
+    <nav>
+      <a href="regular-counters.html" target="_blank">Regular Counters</a>
+      <a href="tera-counters.html" target="_blank">Tera Type Counters</a>
+      <a href="applesauce-info.html" target="_blank">Applesauce Info</a>
+    </nav>
+    <button id="mode-toggle">Toggle Dark/Light Mode</button>
+  </header>
+
+  <section id="search">
+    <input type="text" id="pokemon-search" placeholder="Search Pokémon..." />
+    <div id="suggestions" class="autocomplete-box"></div>
+    <button onclick="searchPokemon()">Search</button>
+  </section>
+
+  <section id="pokemon-data"></section>
+
+  <section id="type-weakness-chart">
+    <h2>Type Weakness Chart</h2>
+    <table>
+      <thead><tr><th>Type</th><th>Strong Against</th><th>Weak Against</th></tr></thead>
+      <tbody id="type-chart-body"></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pokémon Counter Calculator</p>
+  </footer>
+</body>
+</html>
