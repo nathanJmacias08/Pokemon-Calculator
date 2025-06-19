@@ -1,0 +1,37 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background: #ffcb05;
+  padding: 20px;
+  color: #2a75bb;
+}
+
+#search {
+  margin: 20px 0;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button {
+  background: #ffcb05;
+  color: #2a75bb;
+  border: none;
+  cursor: pointer;
+}
+
+#pokemon-data {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
